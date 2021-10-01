@@ -48,6 +48,8 @@ directly, "inlining" them, so to speak.
 
 ## Example
 
+You can see the example in action [here](https://zot.github.io/react-mvc-lite), by the way.
+
 For this example, we'll use 3 types of counters: IncrementingCounter,
 DecrementingCounter, and IncDecCounter. The three counters really only
 differ in how they render (what buttons and how many of them) but in real
