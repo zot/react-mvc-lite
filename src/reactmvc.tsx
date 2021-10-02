@@ -30,9 +30,8 @@ export function control(obj: any, ...props: string[]) {
     const [objState, setObjState] = useState<any[]>(props.map(p=> obj[p]))
 
     return (func: (...args: any[])=> any)=> (...args)=> {
-        const values = props.map(p=> obj[p])
-
         func(...args)
+        const values = props.map(p=> obj[p])
         if (!objState || values.filter((v, i)=> !deepEqual(v, objState[i])).length) {
             setObjState(values)
         }
