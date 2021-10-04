@@ -2,7 +2,7 @@
   "name": "react-mvc-lite",
   "version": "0.0.1",
   "license": "MIT",
-  "main": "src/reactmvc.tsx",
+  "main": "build/src/reactmvc.js",
   "devDependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
@@ -20,7 +20,8 @@
   },
   "scripts": {
     "http": "cd example; webpack serve -c webpack.config.js",
-    "dist": "cd example; webpack -c webpack.config.js"
+    "dist": "cd example; webpack -c webpack.config.js",
+    "build": "tsc --outDir build --jsx react src/reactmvc.tsx"
   },
   "prettier": {
     "printWidth": 100
