@@ -1,6 +1,6 @@
 {
   "name": "react-mvc-lite",
-  "version": "0.1",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/reactmvc.tsx",
   "devDependencies": {
